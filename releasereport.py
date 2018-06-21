@@ -78,8 +78,10 @@ def cleanbody(s):
     for line in s.split('\n'):
         if all([c in ('-','*','=') for c in line.strip()]):
             continue
+        if line.strip("\r\n") and line.strip("\r\n")[0] == "[" and line.strip("\r\n")[-1] == "]":
+            out += "> \n" #extra newline
         out  += "> " + line.strip("\r\n") + "\n"
-        if line.strip("\r\n")[0] == "[" and line.strip("\r\n")[-1] == "]":
+        if line.strip("\r\n") and line.strip("\r\n")[0] == "[" and line.strip("\r\n")[-1] == "]":
             out += "> \n" #extra newline
     return out
 
