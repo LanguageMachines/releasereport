@@ -91,6 +91,9 @@ print("# Software Release and Progress Report\n")
 print("Start date: ", begindate)
 print("End date: ", enddate)
 print()
+print("## Short Summary\n")
+print("(TODO: add manually)")
+print()
 
 headers = {
     'User-Agent': 'proycon/releasereport'
