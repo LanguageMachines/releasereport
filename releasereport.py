@@ -30,6 +30,7 @@ sources = [
         ("proycon", "pynlpl"),
         ("LanguageMachines", "libfolia"),
         ("LanguageMachines", "foliautils"),
+        ("cltl", "NAFFoLiAPy"),
     ]),
     ("FLAT","CLARIAH T24 [D2.10 (software); D2.11 (docs)]", [
         ("proycon", "flat"),
