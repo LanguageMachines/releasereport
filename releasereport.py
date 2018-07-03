@@ -13,7 +13,6 @@ parser.add_argument('--all', help="Add non-CLARIN projects as well",  action='st
 parser.add_argument('--verbose', help="List all software, even if there are no releases, and adds descriptions",  action='store_true')
 parser.add_argument('--begin', type=str,help="Begin date (YYYY-MM-DD)", action='store',default="",required=True)
 parser.add_argument('--end', type=str,help="End date (YYYY-MM-DD)", action='store',default=datetime.datetime.now().strftime("%Y-%m-%d"),required=False)
-parser.add_argument('positional', nargs='+', help='bar help')
 args = parser.parse_args()
 #args.storeconst, args.dataset, args.num, args.bar
 
@@ -188,10 +187,10 @@ for group, references, repos in sorted(sources):
                 print(f"*(Released by " + names[release['author']['login']] + " on " + release['published_at'][:10] + ")*\n"  + f"https://github.com/{user}/{repo}/releases/tag/" + release['tag_name'])
                 print()
         if not found and args.verbose:
-            print(f"*(no releases since {args.begin})*")
+            print(f"*(no releases this period)*")
             print()
     if not found and not args.verbose:
-        print(f"*(no releases since {args.begin})*")
+        print(f"*(no releases this period)*")
         print()
     print()
 
