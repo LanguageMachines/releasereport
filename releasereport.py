@@ -185,7 +185,7 @@ for group, references, repos in sorted(sources):
             except:
                 pass
             print("  - *open issues*: " +  str(user_repos[user][repo.lower()]['open_issues']))
-            print("  - *community interest*: " +  str(user_repos[user][repo.lower()]['stargazers_count']) + " stars, " + str(user_repos[user][repo.lower()]['watchers']) + " watchers, " + str(user_repos[user][repo.lower()]['forks'])) + " forks"
+            print("  - *community interest*: " +  str(user_repos[user][repo.lower()]['stargazers_count']) + " stars, " + str(user_repos[user][repo.lower()]['watchers']) + " watchers, " + str(user_repos[user][repo.lower()]['forks']) + " forks")
         print()
         print("*Releases:*")
         print()
