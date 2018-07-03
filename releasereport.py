@@ -101,7 +101,7 @@ if args.all:
             ("proycon","babelpy"),
         ]),
         ("Deprecated projects", "(unfunded)", [
-            ("LanguageMachine", "LuigiNLP"),
+            ("LanguageMachines", "LuigiNLP"),
         ]),
         ("Shared-task software", "(unfunded)", [
             ("LanguageMachines" ,"CLIN28_ST_spelling_correction"),
@@ -114,6 +114,9 @@ if args.all:
         ]),
     ]
 
+headers = {
+    'User-Agent': 'proycon/releasereport'
+}
 
 users = set()
 for _,_, repos in sorted(sources):
@@ -123,8 +126,16 @@ for _,_, repos in sorted(sources):
 #Get a list of all repositories for the users
 user_repos = defaultdict(dict)
 for user in users:
-    for repo in requests.get(url=f"https://api.github.com/users/{user}/repos", auth=HTTPBasicAuth(username, pw), headers=headers).json():
-        user_repos[user][repo['name'].lower()] = repo
+    first = True
+    url = f"https://api.github.com/users/{user}/repos"
+    while first or ('next' in response.links and 'url' in response.links['next']):
+        first = False
+        print("Querying ", url,file=sys.stderr)
+        response = requests.get(url=url, auth=HTTPBasicAuth(username, pw), headers=headers)
+        for repo in response.json():
+            user_repos[user][repo['name'].strip().lower()] = repo
+        if 'next' in response.links and 'url' in response.links['next']:
+            url = response.links['next']['url']
 
 #map github logins to verbose names
 names = {
@@ -153,42 +164,46 @@ print("## Short Summary\n")
 print("(TODO: add manually)")
 print()
 
-headers = {
-    'User-Agent': 'proycon/releasereport'
-}
 
 for group, references, repos in sorted(sources):
     print(f"## {group}")
     print()
-    if args.all:
-        print("*Project/Task/Funder:* ", references)
-    else:
-        print("*Official task and deliverable references:* ", references)
+    print("*Project/task/deliverable references:* ", references)
     print()
     found = False
     for user, repo in sorted(repos, key= lambda x: x[1]):
-        releases = requests.get(url=f"https://api.github.com/repos/{user}/{repo}/releases", auth=HTTPBasicAuth(username, pw), headers=headers).json()
-        if args.verbose:
-            found = False
-            print("### " + repo)
-            print()
-            print("*Description:* ", user_repos[user][repo.lower()]['description'])
-            print()
-        for release in releases:
-            if release['published_at'][:10] >= args.begin:
-                found = True
-                if args.verbose:
-                    print("#### " + repo + " " + release['tag_name'])
-                else:
+        first = True
+        url = f"https://api.github.com/repos/{user}/{repo}/releases"
+        while first or ('next' in response.links and 'url' in response.links['next']):
+            first = False
+            print("Querying ", url,file=sys.stderr)
+            response = requests.get(url=url, auth=HTTPBasicAuth(username, pw), headers=headers)
+            releases = response.json()
+            if args.verbose:
+                found = False
+                try:
+                    print("*Description for " + repo + ":* ", user_repos[user][repo.lower()]['description'])
+                except:
+                    print("No description for ", repo,file=sys.stderr)
+                print()
+            for release in releases:
+                if release['published_at'][:10] >= args.begin:
+                    found = True
                     print("### " + repo + " " + release['tag_name'])
+                    print()
+                    print(cleanbody(release['body']))
+                    print()
+                    try:
+                        namelabel = names[release['author']['login']]
+                    except KeyError:
+                        namelabel = release['author']['login']
+                    print(f"*(Released by " + namelabel + " on " + release['published_at'][:10] + ")*\n"  + f"https://github.com/{user}/{repo}/releases/tag/" + release['tag_name'])
+                    print()
+            if not found and args.verbose:
+                print(f"*(no releases for " + repo + " this period)*")
                 print()
-                print(cleanbody(release['body']))
-                print()
-                print(f"*(Released by " + names[release['author']['login']] + " on " + release['published_at'][:10] + ")*\n"  + f"https://github.com/{user}/{repo}/releases/tag/" + release['tag_name'])
-                print()
-        if not found and args.verbose:
-            print(f"*(no releases this period)*")
-            print()
+            if 'next' in response.links and 'url' in response.links['next']:
+                url = response.links['next']['url']
     if not found and not args.verbose:
         print(f"*(no releases this period)*")
         print()
