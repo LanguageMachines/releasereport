@@ -171,7 +171,25 @@ for group, references, repos in sorted(sources):
     print("*Project/task/deliverable references:* ", references)
     print()
     found = False
-    for user, repo in sorted(repos, key= lambda x: x[1]):
+    if args.verbose:
+        print("*Repository details*:")
+        print()
+        for user, repo in sorted(repos, key= lambda x: x[1].lower()):
+            found = False
+            print("* **" + str(user_repos[user][repo.lower()]['name']) + f"** - ``https://github.com/{user}/{repo}``")
+            print("  - *description*: " + str(user_repos[user][repo.lower()]['description']))
+            if user_repos[user][repo.lower()]['homepage']:
+                print("  - *website*: " + str(user_repos[user][repo.lower()]['homepage']))
+            try:
+                print("  - *license*: " + str(user_repos[user][repo.lower()]['license']['name']))
+            except:
+                pass
+            print("  - *open issues*: " +  str(user_repos[user][repo.lower()]['open_issues']))
+            print("  - *community interest*: " +  str(user_repos[user][repo.lower()]['stargazers_count']) + " stars, " + str(user_repos[user][repo.lower()]['watchers']) + " watchers, " + str(user_repos[user][repo.lower()]['forks'])) + " forks"
+        print()
+        print("*Releases:*")
+        print()
+    for user, repo in sorted(repos, key= lambda x: x[1].lower()):
         first = True
         url = f"https://api.github.com/repos/{user}/{repo}/releases"
         while first or ('next' in response.links and 'url' in response.links['next']):
@@ -179,13 +197,6 @@ for group, references, repos in sorted(sources):
             print("Querying ", url,file=sys.stderr)
             response = requests.get(url=url, auth=HTTPBasicAuth(username, pw), headers=headers)
             releases = response.json()
-            if args.verbose:
-                found = False
-                try:
-                    print("*Description for " + repo + ":* ", user_repos[user][repo.lower()]['description'])
-                except:
-                    print("No description for ", repo,file=sys.stderr)
-                print()
             for release in releases:
                 if release['published_at'][:10] >= args.begin:
                     found = True
@@ -208,4 +219,3 @@ for group, references, repos in sorted(sources):
         print(f"*(no releases this period)*")
         print()
     print()
-
