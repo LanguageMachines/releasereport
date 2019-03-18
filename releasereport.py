@@ -21,38 +21,38 @@ username = os.environ['GITHUB_USER']
 pw = os.environ['GITHUB_PASS']
 
 sources = [
-    ("CLAM","CLARIAH WP3 T21 [D2.8 (software); D2.9 (doc)]", [
+    ("CLAM","CLARIAH-PLUS WP3 T142; CLARIAH-CORE WP3 T21 [D2.8 (software); D2.9 (doc)]", [
         ("proycon", "clam"),
         ("proycon", "clamservices"),
     ]),
-    ("FoLiA","CLARIAH WP3 T71 [D2.5 (libs); D2.6 (docs); D2.7 (tools)]", [
+    ("FoLiA","CLARIAH-PLUS WP3 T108; CLARIAH-CORE WP3 T71 [D2.5 (libs); D2.6 (docs); D2.7 (tools)]", [
         ("proycon", "folia"),
         ("proycon", "pynlpl"),
         ("LanguageMachines", "libfolia"),
         ("LanguageMachines", "foliautils"),
         ("cltl", "NAFFoLiAPy"),
     ]),
-    ("FLAT","CLARIAH WP3 T24 [D2.10 (software); D2.11 (docs)]", [
+    ("FLAT","CLARIAH-PLUS WP3 T062 & T063; CLARIAH-CORE WP3 T24 [D2.10 (software); D2.11 (docs)]", [
         ("proycon", "flat"),
         ("proycon", "foliadocserve"),
     ]),
-    ("LaMachine","CLARIAH WP3: LaMachine v2 plan in scope of CLARIAH WP3 VRE", [
+    ("LaMachine","CLARIAH-PLUS WP3 T098; CLARIAH CORE WP3: LaMachine v2 plan in scope of CLARIAH WP3 VRE", [
         ("proycon", "LaMachine"),
         ("proycon", "labirinto"),
         ("proycon", "codemetapy"),
     ]),
-    ("Ucto","CLARIAH WP3 T55 [D1.1 (software), D1.2 (docs)]", [
+    ("Ucto","CLARIAH-CORE WP3 T55 [D1.1 (software), D1.2 (docs)]", [
         ("LanguageMachines", "ucto"),
         ("LanguageMachines", "uctodata"),
         ("proycon", "python-ucto"),
     ]),
-    ("Frog","CLARIAH WP3 T22 [D2.1 (software); D2.2 (doc)]; T23 [D2.3 (froggen software), D2.4 (froggen docs)]", [
+    ("Frog","CLARIAH-PLUS WP3 T139; CLARIAH-CORE WP3 T22 [D2.1 (software); D2.2 (doc)]; T23 [D2.3 (froggen software), D2.4 (froggen docs)]", [
         ("LanguageMachines", "frog"),
         ("LanguageMachines", "frogdata"),
         ("proycon", "python-frog"),
         ("LanguageMachines", "toad"),
     ]),
-    ("PICCL & TICCL","CLARIAH WP3 T26 [D1.3 (PICCL software); T1.4 (PICCL docs)]", [
+    ("PICCL & TICCL","CLARIAH-PLUS WP3 ???; CLARIAH-CORE WP3 T26 [D1.3 (PICCL software); T1.4 (PICCL docs)]", [
         ("LanguageMachines", "PICCL"),
         ("LanguageMachines", "ticcltools"),
     ]),
@@ -66,7 +66,7 @@ sources = [
     ("Miscellaneous","Dependants of others", [
         ("LanguageMachines", "ticcutils"),
     ]),
-    ("Software Quality Guidelines","CLARIAH WP2 Task 54.100", [
+    ("Software Quality Guidelines","CLARIAH-CORE WP2 Task 54.100", [
         ("CLARIAH", "software-quality-guidelines"),
     ]),
 ]
