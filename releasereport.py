@@ -27,6 +27,8 @@ sources = [
     ]),
     ("FoLiA","CLARIAH-PLUS WP3 T108; CLARIAH-CORE WP3 T71 [D2.5 (libs); D2.6 (docs); D2.7 (tools)]", [
         ("proycon", "folia"),
+        ("proycon", "foliapy"),
+        ("proycon", "foliatools"),
         ("proycon", "pynlpl"),
         ("LanguageMachines", "libfolia"),
         ("LanguageMachines", "foliautils"),
