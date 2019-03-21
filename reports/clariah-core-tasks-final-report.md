@@ -51,10 +51,10 @@ The following was planned, we report on the status:
 
 * Ongoing development and maintenance: **accomplished**
 * Updated Documentation: [accomplished](https://clam.readthedocs.io)
-* Port backend to Python 3, web.py -> flask: **accomplished**
+* Port backend to Python 3, web.py -> flask: **accomplished** (ahead of schedule prior to the official start)
 * Support for users and service providers: **accomplished**
 * OAuth reimplementation: **accomplished**
-* Connecting CLAM services in workflow systems: to this end, support has been given in the WP3 VRE project, no seperate initiatives have been started
+* Connecting CLAM services in workflow systems: to this end, support has been given in the WP3 VRE project, no separate initiatives have been started
 
 ## T22: Frog
 
