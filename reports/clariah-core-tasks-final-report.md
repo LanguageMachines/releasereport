@@ -162,6 +162,28 @@ The following was planned, we report on the status:
 * Constructing FoLiA Set Definitions for FLAT: various sets have been created and the set definition format has been completely revised (now uses SKOS/RDF), converter from the old legacy format is provided
 * Conversion module for FoLiA in pandoc: **partially accomplished**, not in pandoc but we decided on separate rst2folia tool (using docutils) that converts ReStructuredText to FoLiA.
 
+## LaMachine
+
+* Website: https://proycon.github.io/lamachine
+* Source Repository: https://github.com/proycon/lamachine
+
+LaMachine was not initially planned in CLARIAH, but was conceived along the way. LaMachine is a unified software
+distribution for Natural Language Processing that distributes our entire software stack. This is also how we deliver our
+software to CLARIN centres and other users.
+
+We integrate numerous open-source NLP tools, programming libraries, web-services, and web-applications in a single
+Virtual Research Environment that can be installed on a wide variety of machines.
+
+The software included in LaMachine tends to be highly specialised and generally depends on a lot of other interdependent
+software. Installing all this software can be a daunting task, compiling it from scratch even more so. LaMachine
+attempts to make this process easier by offering pre-built recipes for a wide variety of systems, whether it is on your
+home computer or whether you are setting up a dedicated production environment, LaMachine will safe you a lot of work.
+
+We address various audiences; the bulk of the software is geared towards data scientists who are not afraid of the
+command line and some programming. We give you the instruments and it is up to you to yield them. However, we also
+attempt to accommodate researchers that require more high-level interfaces by incorporating webservices and websites
+that expose some of the functionality to a larger audience.
+
 
 # Appendix: Software Release Report
 
