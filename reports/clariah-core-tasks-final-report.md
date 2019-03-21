@@ -42,6 +42,9 @@ TODO: Henk
 
 ## T21: CLAM
 
+* Website: https://proycon.github.io/clam
+* Source Repository: https://github.com/proycon/clam
+
 See the attached software release report for a full overview of all releases during CLARIAH core.
 
 The following was planned, we report on the status:
@@ -54,6 +57,9 @@ The following was planned, we report on the status:
 * Connecting CLAM services in workflow systems: to this end, support has been given in the WP3 VRE project, no seperate initiatives have been started
 
 ## T22: Frog
+
+* Website: https://languagemachines.github.io/frog
+* Source Repository: https://github.com/LanguageMachines/frog
 
 See the attached software release report for a full overview of all releases during CLARIAH core.
 
@@ -80,6 +86,8 @@ Hendrickx (Radboud University).
 
 ## T23: Frog Generator (Toad)
 
+* Source Repository: https://github.com/LanguageMachines/toad
+
 See the attached software release report for a full overview of all releases during CLARIAH core.
 
 The following was planned, we report on the status:
@@ -94,6 +102,8 @@ are the current scope of Froggen; more levels will be added). Successful tests
 have been carried out with Old Greek and historical variants of Dutch.
 
 ## T24: FLAT
+
+* Source Repository: https://github.com/proycon/flat
 
 See the attached software release report for a full overview of all releases during CLARIAH core.
 
@@ -118,6 +128,9 @@ TODO: Martin?
 
 ## T55: Ucto
 
+* Website: https://languagemachines.github.io/ucto
+* Source Repository: https://github.com/LanguageMachines/ucto
+
 See the attached software release report for a full overview of all releases during CLARIAH core.
 
 The following was planned, we report on the status:
@@ -130,6 +143,9 @@ The following was planned, we report on the status:
 TODO: Antal
 
 ## T71: FoLiA
+
+* Website: https://proycon.github.io/folia
+* Source Repository: https://github.com/proycon/folia
 
 See the attached software release report for a full overview of all releases during CLARIAH core.
 
