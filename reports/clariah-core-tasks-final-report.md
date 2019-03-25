@@ -34,11 +34,69 @@ can be found here: https://github.com/proycon/LaMachine
 
 ## T10: Data Curation Service
 
-TODO: Henk
+A.	Metadatacollection records
+
+We have worked at the introduction of more elaborate and consistent metadata records for collections of (linguistic) data resources in the CLARIN/CLARIAH context. For this purpose we designed and implemented a CMDI profile. This profile is stored in CLARIN’s Component Registry and can be viewed at https://catalog.clarin.eu/ds/ComponentRegistry/rest/registry/1.1/profiles/clarin.eu:cr1:p_1493735943947/xml. We validated the profile in a first pilot in which we populated the profile for 45 Dutch language resources. Given the complexity of the profile and special purpose requirements we developed our own interface for creating, editing, listing, copying and exporting descriptions of metadata collection records (https://applejack.science.ru.nl/collbank/). 
+
+With the help of CLARIN we build our OAI-PMH bridge to release the resulting CMDI metadata records and make them available in CLARIN’s Virtual Language Observatory (VLO). Via the interface and the  harvesting bridge we have published the metadata records of  60 collections.  
+
+More information can be found in Van den Heuvel, Komen, Oostdijk (2018).
+
+
+B.	Data curation:  
+
+Data curation efforts have mainly concentrated on the regional dialect dictionaries for Brabant, Limburg and Gelderland (WBD, WLD, WGD). Many errors were corrected in the database records. From our own matching CLST realized search portals for these dialect dictionaries which were launched in 2016, and 2017, see https://e-wbd.nl/ and http://e-wld.nl/.  The search page e-wgd.nl is under construction and will be launched in 2019.
+
+The LMF structure has been adopted to new insights (see Van den Heuvel, Sanders & Van der Sijs, 2016) permitting the inclusion of other regional dialect dictionaries (such as WALD and WOD), and local dialect dictionaries. A close collaboration with the INT has been established for WBD and WLD in order to integrate these dictionaries in the DSDD project of the University of Gent (see https://www.clarin.eu/sites/default/files/CLARIN2018_Poster-9_Paper-73_VanKeymeulen-Chambers-DeTier-deDoes-Depuydt-Schoonheim-Vandenberghe-Hellebaut.pdf). An important element is here that all entries at dialect word level obtained a unique ID.
+
+Nelleke Oostdijk gave a presentation about corpus creation and preparation at the Provenance Workshop at DANS in September 2018: https://clariah.nl/files/presentations/provenance/00-CLARIAH-Provenance_Workshop.pdf 
+
+A task scheduled for 2019 is the linking of CGN and SoNaR metadata in OpenSoNaR+. 
+
+Publications:
+
+Heuvel, H. van den, Oostdijk, N., Sanders, E., De Lint, V. (2015) Data curations by the Dutch Data Curation Service. Overview and future perspective. In: Odijk, J. (2015): Selected Papers from the CLARIN 2014 Conference, October 24-25, 2014, Soesterberg, The Netherlands. Linköping Electronic Conference Proceedings, 116, pp. 54-62. ISBN: 978-91-7685-954-4. http://www.ep.liu.se/ecp_article/index.en.aspx?issue=116;article=005
+
+Heuvel. H. van den, Sanders, E.P., Sijs, N. van der (2016) Curation of Dutch Regional Dictionaries. In: Proceedings LREC 2016, Portorož, 23-28 May 2016. pp. 3249-3255. 
+
+Hout, R. van, Sijs, N. van der, Komen, E., Heuvel, H. van den (2018) A Fast and Flexible Webinterface for Dialect Research in the Low Countries. In Proceedings LREC 2018, Miyazaki, 7-10 May 2018, pp. 3617-3621.
+
+Heuvel, H. van den, Komen, E., Oostdijk, N. (2018) Metadata Collection Records for Language Resources. In Proceedings LREC 2018, Miyazaki, 7-10 May 2018, pp. 1282-1288.
+
 
 ## T70: RDM Guidelines
 
-TODO: Henk
+Our task to establish RDM guidelines has been approached from various angles. Henk van den Heuvel as research data officer of the Faculty of Arts at Radboud University was involved in establishing the Research Data Management policy for the faculty with a clear view on the type of research data that is relevant for CLARIAH being language and humanities related data. This has resulted in a number of relevant websites that are relevant for CLARIAH partners too:
+
+* https://www.ru.nl/rdm
+* https://www.ru.nl/rdm/vm/checklist-rdm/
+* https://www.ru.nl/facultyofarts/research/research-data-management/
+* https://www.radboudnet.nl/letteren/onderzoek/regelingen-werkprocessen/research-data-management/
+ 
+Furthermore the GDPR which came into effect in May 2018 had an important impact on collecting, processing and sharing research data that includes person data. Person data are not only present in the metadata of many data collections but also at the heart of it (audio and video recordings). As a result of a questionnaire sent out to relevant CLARIAH partners in 2018 it appeared that institutes have not published binding guidelines and/or are not willing to share these (at this stage). Similarly, Radboud University published the webpages below on GDPR but with respect to research data an official policy has not been released yet.    
+
+* https://www.radboudnet.nl/privacy/english/protection-personal-data/personal-data/
+* https://www.radboudnet.nl/privacy/english/use-personal-data/purpose-and-associated-purpose/
+* https://www.radboudnet.nl/privacy/english/use-personal-data/faq/
+
+Further, with respect to sensitive data Nelleke Oostdijk gave a presentation at the EUDAT workshop on sensitive data in Porto in January 2018. 
+
+CLARIN ERIC has installed a Legal Issues Committee (CLIC - https://www.clarin.eu/governance/legal-issues-committee) Henk van den Heuvel joined the special session of this workgroup at the Annual Conference in Pisa in October 2018,  and the workshop in Vilnius in December 2018 (Hacking the GDPR). 
+
+Furthermore, he co-organised two CLARIN workshops of the DELAD taskforce. DELAD (=SHARED in Swedish) is an initiative to establish a digital archive of disordered speech and share this with interested researchers. DELAD seeks collaboration with CLARIN to this end. The first workshop was held in Cork in November 2017 and the second in Utrecht in January 2019. In the workshop in Utrecht CLIC members were invited to present their views on collecting processing and sharing corpora of disordered speech.
+
+Finally, a new European infrastructure project named SSHOC started in 2019 in which Task 5.4 is concentrated on accessibility of sensitive data. Since CLST is actively involved here further results that are also relevant for CLARIAH may be expected in terms of guidelines, data and tools.   
+
+Relevant websites showing our activities:
+
+* https://eudat.eu/sensitive-data-workshop
+* https://www.clarin.eu/tags/clic
+* https://www.clarin.eu/blog/report-clarin-delad-workshop
+* https://www.clarin.eu/blog/clarin-workshop-delad-database-enterprise-language-and-speech-disorders 
+* https://www.sshopencloud.eu/
+
+CLST being a CLARIN T-centre we realized Trusted CLARIN authentication arranged for OpenSoNaR+ & FAME search portals/pages.  To have this facility is important for safeguarding data behind search portals now, and for later if CLST as a CLARIN data centre were to store sensitive data (which will be followed up in CLARIN-PLUS).
+
 
 ## T21: CLAM
 
