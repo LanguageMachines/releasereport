@@ -188,10 +188,6 @@ The following was planned, we report on the status:
 
 In June, FLAT was selected as the annotation tool of choice by the PARSEME COST Action (http://typo.uni-konstanz.de/parseme/), this led to some shifted priorities and implementation of various new features.
 
-## T26: TICCL
-
-TODO: Martin?
-
 ## T55: Ucto
 
 * Website: https://languagemachines.github.io/ucto
@@ -208,9 +204,6 @@ We improved and validated the language-dependent part of Ucto and checked the ru
 
 We evaluated the performed of Ucto on new unseen material. It turned out to be very difficult to find existing independently verified tokenized text, as for most corpora the tokenization is not manually checked. We did obtain a tokenized sample of 2897 sentences from the Dutch DCOI data set that was manually corrected. We used a small sample of around 60 sentences from the NewReader corpus in English, Dutch and Italian as a second evaluation set for Ucto. As the tokenization in the NewsReader corpus was not manually verified, we asked a native speaker of Italian and an expert for English and Dutch to verify the tokenization. We ran Ucto on these testsets and compared the outcome to the manually corrected labels. The resulting F-scores were very high, ranging from 99.2 for English to 99.9 on the DCOI dataset. The remaining errors concerned splits on dashes and uncommon names with unexpected characters in the strings.
 
-## T63: Radboud Lead
-
-TODO: Antal
 
 ## T71: FoLiA
 
