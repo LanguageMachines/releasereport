@@ -124,7 +124,7 @@ See the attached software release report for a full overview of all releases dur
 The following was planned, we report on the status:
 
 * Ongoing development and maintenance: **accomplished**
-* Updated Documentation: [accomplished](https://frognlp.readthedocs.io)
+* Frog Documentation is converted from a static PDf version of the documentation to an online website: (https://frognlp.readthedocs.io)
 * Dependency parser in C++: **accomplished**
 * Integration with Alpino (as in T-Scan): **not performed**, however, a separate Alpino-to-FoLiA converter is available and integrated in the CLAM-based Alpino webservice we host
 
@@ -139,8 +139,16 @@ databases, generated errors due to inconsistencies in the original data.
 Morphological analysis is now also ‘complete’ in the sense that it produces
 fully nested morphological analyses.
 
-A manual for Frog has been created, with external writing support from dr. Iris
-Hendrickx (Radboud University).
+We worked with Frog in a number of case studies. Frog was used as a test case in the Master course Text and Multimedia Mining from the Faculty of Arts, Radboud University. We ran experiments with Frog within case study with the KB with the 'ICT with Inductry 2019' Workshop. And Frog was investigated as part of a student internship where the student worked on enhancing Frog NER with more fine-grained categories using Wikipedia.
+
+We performed an evaluation of the modules in Frog. The optimal evaluation of the Frog modules is performed by using a new and unseen test set. The developers of Frog are not suited to create the annotation for a new test set as they might be biased by the implementation decisions in Frog and will be inclined to follow those. However, finding independent test sets was not always possible, and we used 10-fold cross validation on training material to get a performance indication for the POS, lemmatizer and Chunker.
+ The lemmatizer is trained on the CELEX word list. We evaluated all modules using tenfold-cross validaiton on the training material of the POS-tagger and chunker consisting of 11.133K tokens, 998.796 sentences.  The POS tagger obtained an accuracy of 95.6 on the finegrained CGN-tags and 97.97% on the 12 main CGN-tags. The chunker acchieved an accuracy of 92.5 and the lemmatizer 95.85%.
+Do note that these results are biased over-optimistic results as part of this data was automatically labeled.
+
+For the NER module we found several new unseen test sets: the CLIN26 shared task data set, a dataset of Dutch parlementary documents (Jonkers, 2016), a data set of historical documents from the KB and we had an intern student who created and annotated a data set of Wikipedia pages for NER labels. Overall, the NER module does not achieve very high results, between 25% and 60% F-scores. Names are often domain dependent, and also time dependent. As Frog is trained on an annotated data set of mostly news articles, many of the names are no longer relevant.
+
+We presented the outcomes of the Frog evaluation as a poster in the CLIN 29 conference in Groningen, 30 March 2019. The Frog documentation still needs to be updated with these evaluation results.
+
 
 ## T23: Frog Generator (Toad)
 
@@ -194,7 +202,11 @@ See the attached software release report for a full overview of all releases dur
 The following was planned, we report on the status:
 
 * Ongoing development and maintenance: **accomplished**
-* Updated documentation: [accomplished](https://ucto.readthedocs.io)
+* Updated documentation: [accomplished] We converted the static PDf version of the documentation to an online website and updated the content. The Ucto documentation was released on 30 Oct 2018 and is now available at https://ucto.readthedocs.io/.
+
+We improved and validated the language-dependent part of Ucto and checked the rules and abbreviations for English, Italian, Portuguese, French and Turkish. 
+
+We evaluated the performed of Ucto on new unseen material. It turned out to be very difficult to find existing independently verified tokenized text, as for most corpora the tokenization is not manually checked. We did obtain a tokenized sample of 2897 sentences from the Dutch DCOI data set that was manually corrected. We used a small sample of around 60 sentences from the NewReader corpus in English, Dutch and Italian as a second evaluation set for Ucto. As the tokenization in the NewsReader corpus was not manually verified, we asked a native speaker of Italian and an expert for English and Dutch to verify the tokenization. We ran Ucto on these testsets and compared the outcome to the manually corrected labels. The resulting F-scores were very high, ranging from 99.2 for English to 99.9 on the DCOI dataset. The remaining errors concerned splits on dashes and uncommon names with unexpected characters in the strings.
 
 ## T63: Radboud Lead
 
@@ -242,6 +254,7 @@ command line and some programming. We give you the instruments and it is up to y
 attempt to accommodate researchers that require more high-level interfaces by incorporating webservices and websites
 that expose some of the functionality to a larger audience.
 
+Scientific Ouput: We submitted an extended abstract on LaMachine for the CLARIN conference, which was presented presented in Pisa in poster-form in Ocotober, 2018. We also worked on a full paper which was recently accepted for the proceedings of that conference.
 
 # Appendix: Software Release Report
 
