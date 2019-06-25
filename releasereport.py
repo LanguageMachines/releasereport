@@ -58,6 +58,9 @@ sources = [
         ("LanguageMachines", "PICCL"),
         ("LanguageMachines", "ticcltools"),
     ]),
+    ("Nederlab","Nederlab", [
+        ("proycon", "nederlab-pipeline"),
+    ]),
     ("Timbl & Mbt","Pre-CLARIN", [
         ("LanguageMachines", "timbl"),
         ("LanguageMachines", "timblserver"),
@@ -65,8 +68,10 @@ sources = [
         ("LanguageMachines", "mbtserver"),
         ("proycon", "python-timbl"),
     ]),
-    ("Miscellaneous","Dependants of others", [
+    ("Miscellaneous","Dependencies/wrappers and or unforeseen tools (related to CLARIAH projects)", [
         ("LanguageMachines", "ticcutils"),
+        ("LanguageMachines", "aNtiLoPe"),
+        ("proycon", "wikiente"),
     ]),
     ("Software Quality Guidelines","CLARIAH-CORE WP2 Task 54.100", [
         ("CLARIAH", "software-quality-guidelines"),
