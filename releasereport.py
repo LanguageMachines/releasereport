@@ -205,18 +205,19 @@ for group, references, repos in sorted(sources):
             response = requests.get(url=url, auth=HTTPBasicAuth(username, pw), headers=headers)
             releases = response.json()
             for release in releases:
-                if release['published_at'][:10] >= args.begin:
-                    found = True
-                    print("### " + repo + " " + release['tag_name'])
-                    print()
-                    print(cleanbody(release['body']))
-                    print()
-                    try:
-                        namelabel = names[release['author']['login']]
-                    except KeyError:
-                        namelabel = release['author']['login']
-                    print(f"*(Released by " + namelabel + " on " + release['published_at'][:10] + ")*\n"  + f"https://github.com/{user}/{repo}/releases/tag/" + release['tag_name'])
-                    print()
+                if isinstance(release, dict) and 'published_at' in release:
+                    if release['published_at'][:10] >= args.begin:
+                        found = True
+                        print("### " + repo + " " + release['tag_name'])
+                        print()
+                        print(cleanbody(release['body']))
+                        print()
+                        try:
+                            namelabel = names[release['author']['login']]
+                        except KeyError:
+                            namelabel = release['author']['login']
+                        print(f"*(Released by " + namelabel + " on " + release['published_at'][:10] + ")*\n"  + f"https://github.com/{user}/{repo}/releases/tag/" + release['tag_name'])
+                        print()
             if not found and args.verbose:
                 print(f"*(no releases for " + repo + " this period)*")
                 print()
