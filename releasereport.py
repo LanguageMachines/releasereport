@@ -70,7 +70,7 @@ sources = [
     ]),
     ("Miscellaneous","Dependencies/wrappers and or unforeseen tools (related to CLARIAH projects)", [
         ("LanguageMachines", "ticcutils"),
-        ("LanguageMachines", "aNtiLoPe"),
+        ("proycon", "aNtiLoPe"),
         ("proycon", "wikiente"),
     ]),
     ("Software Quality Guidelines","CLARIAH-CORE WP2 Task 54.100", [
