@@ -29,6 +29,7 @@ sources = [
         ("proycon", "folia"),
         ("proycon", "foliapy"),
         ("proycon", "foliatools"),
+        ("proycon", "folia-rust"),
         ("proycon", "pynlpl"),
         ("LanguageMachines", "libfolia"),
         ("LanguageMachines", "foliautils"),
@@ -60,6 +61,7 @@ sources = [
     ]),
     ("Nederlab","Nederlab", [
         ("proycon", "nederlab-pipeline"),
+        ("proycon", "colibri-utils"),
     ]),
     ("Timbl & Mbt","Pre-CLARIN", [
         ("LanguageMachines", "timbl"),
