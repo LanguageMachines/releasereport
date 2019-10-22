@@ -74,6 +74,7 @@ sources = [
         ("LanguageMachines", "ticcutils"),
         ("proycon", "aNtiLoPe"),
         ("proycon", "wikiente"),
+        ("proycon", "piereling"),
     ]),
     ("Software Quality Guidelines","CLARIAH-CORE WP2 Task 54.100", [
         ("CLARIAH", "software-quality-guidelines"),
