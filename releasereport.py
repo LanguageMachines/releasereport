@@ -142,6 +142,8 @@ for user in users:
         print("Querying ", url,file=sys.stderr)
         response = requests.get(url=url, auth=HTTPBasicAuth(username, pw), headers=headers)
         for repo in response.json():
+            if isinstance(repo, str):
+                raise Exception("Unexpected response: " + str(response))
             user_repos[user][repo['name'].strip().lower()] = repo
         if 'next' in response.links and 'url' in response.links['next']:
             url = response.links['next']['url']
