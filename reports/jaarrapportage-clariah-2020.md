@@ -63,11 +63,11 @@ The lead developer of Frog (and also co-developer of FoLiA) has retired in sprin
 version was released that included various improvement. In doing so, we have delivered a stable tool with a long
 development history. Frog is a popular tool used by many in the Dutch and Flemish NLP communities. Continued support is
 guaranteed despite the retirement of the lead developer, because I have taken over maintenance and support. This also
-applies to the toekniser ucto, a dependency which we include as part of this task. This WP3 task now focusses primarily
+applies to the tokeniser ucto, a dependency which we include as part of this task. This WP3 task now focusses primarily
 on bugfixes and maintenance, further innovative development of Frog has come to an end.
 
 Work has also been started on a possible successor for Frog that employs more state-of-the-art deep learning
-techiniques. We call it DeepFrog. This, however, exceeds the allocated time and funding for this task. Nevertheless, we
+techniques. We call it DeepFrog. This, however, exceeds the allocated time and funding for this task. Nevertheless, we
 have delivered a first experimental version of DeepFrog.
 
 ## LaMachine (T098)
@@ -79,8 +79,8 @@ T098](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/L
 LaMachine is the umbrella under which we make available a lot of our software and the shape in which we offer it as a
 bundle to the larger community both within and outside of CLARIAH. It is being used both by various individual
 researchers and developers, as well as by hosting partners to offer our tools as a service. We notice an increasing
-interesti in LaMachine also from within CLARIAH and other work packages within it, as well as by external organization,
-such as for example Stiching Open Spraaktechnologie. LaMachine is used [relatively often](https://applejack.science.ru.nl/lamastats/lamachinestats.html) .
+interest in LaMachine also from within CLARIAH and other work packages within it, as well as by external organization,
+such as for example Stichting Open Spraaktechnologie. LaMachine is used [relatively often](https://applejack.science.ru.nl/lamastats/lamachinestats.html) .
 
 This task is a support and maintenance task that takes up significantly more time than originally anticipated. Moreover,
 significantly less time was allocated than we originally asked for. The VRE project, described in the next section, has
@@ -100,7 +100,7 @@ was asked to take on the development and coordination of the WP3 Virtual Researc
 plan for continuation of this task. This is a change of course with respect to earlier attempts in CLARIAH-CORE to shape
 the VRE project. Earlier attempts were highly ambitious but failed to come to any delivered results. The renewed plan is
 more modest in its aspirations and attempts first and foremost to focus on interconnecting existing CLARIAH software,
-rather than deevelop any new overarching infrastructure. In practice, LaMachine is the closest thing in WP3 we have to a
+rather than develop any new overarching infrastructure. In practice, LaMachine is the closest thing in WP3 we have to a
 Virtual Research Environment and was therefore chosen as the foundation for further integration.
 
 In this task, we are also looking to connect to related projects like the CLARIN switchboard. Work has already been done
