@@ -1,117 +1,123 @@
-# Jaarrapportage 2020
+# Year report 2020
 
 *Maarten van Gompel*
 
-Startdatum:  2020-01-01
-Einddatum:  2020-12-31
+Start date:  2020-01-01
+End date:  2020-12-31
 
-De in deze rapportage genoemde taken zijn aanvankelijk begonnen bij CLST, Radboud Universiteit Nijmegen, maar de
-ontwikkeling daarvan is sinds de zomer van 2020 grotendeels met mijzelf verhuisd naar het KNAW Humanities Cluster.
-Inhoudelijk maakt dit geen verschil en heeft het ook geen nadelige gevolgen gehad voor de voortgang. Doorlopende hosting en
-beheer van deze de uit deze software voortkomende services bij CLST, Radboud Universiteit is ook gegarandeerd.
+All tasks mentioned in this report initially started at CLST, Radboud Universiteit Nijmegen, but the development of
+these tasks has since summer 2020 been largely moved to KNAW Humanities Cluster, where I am currently employed. This
+doesn't make any difference content-wise, nor will it have any negative implications for our progression. Continued
+hosting and maintenance of the services that spring from this software is furthermore still guaranteed at CLST, Radboud
+University.
 
 ## CLAM: Maintenance and Support (T142)
 
-*Taakbeschrijving:* [CLARIAH-PLUS WP3 T142](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/CLAM.T142.pdf)
+*Task description and plan*: [CLARIAH-PLUS WP3 T142](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/CLAM.T142.pdf)
 
-De laatste grote milestone wat betreft CLAM is in October 2019 afgerond, met de introductie van een nieuwe
-web-interface. Toch is er in 2020 ook veel gebeurd op het gebied van bugfixes, een uitgebreid overzicht is in de
-appendix te vinden. Ook is CLAM wederom gebruikt om een aantal nieuwe webservices in te richten, met name spraakservices
-bij CLST aan de Radboud Universiteit. In het kader van deze taak is hiertoe ondersteuning geboden aan de bouwers van
-deze services.
+The last explicit milestone regarding CLAM was finished in October 2019 and introduced a brand-new web interface.
+Nevertheless, a lot has been done in 2020 with regard to bug fixes and minor improvements. An extensive overview can be
+found in the appendix. CLAM has been used once more to create various new webservice, mostly services focus on speech
+recognition at CLST, Radboud University. In the scope of this task, support has been offered to the developers of these services.
 
 ## FoLiA (T108)
 
-*Taakbeschrijving en planning:* [CLARIAH-PLUS WP3 T108](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/FoLiA.T108.pdf)
+*Task description and plan:* [CLARIAH-PLUS WP3 T108](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/FoLiA.T108.pdf)
 
-FoLiA blijft een belangrijke pijler onder heel veel van onze taken. Deze taak behelst onderhoud en supportwerk aan een
-uitgebreide infrastructuur van libraries en tools rondom het FoLiA dataformaat, vaak in samenspraak met gebruikers. We
-vieren inmiddels al ons 10-jarig bestaan. Er zijn in de periode twee grote releases van het formaat zelf geweest, en een
-aantal kleinere tussenreleases.  De appendix toont weer het volledige overzicht.
+FoLiA remains an important pillar under many of our tasks. This WP3 task provides maintenance and support on a wide
+infrastructure of libraries and tools that deal with the FoLiA ata format, often in collaboration with end-users. We
+celebrate our 10-year anniversary this year. In 2020 we have done twjo major releases of the format itself, and a number
+of smaller intermediate releases. The appendix will show the full overview.
 
-Een beperkte greep uit de nieuwe features in FoLiA deze periode zijn o.a. ondersteuning voor modaliteitsannotatie,
-verbeterde tekstvalidatie, verbeterde metadata mogelijkheden, de mogelijkheid een document op te breken naar meerdere
-bestanden.
+A limited excerpt of new features this period has been, amongst others, an implementation for modality annotation,
+improved text validation, improved flexibility in metadata, and the ability to split a document into multiple files.
 
-Wat betreft de FoLiA tools en zijn de TEI-naar-FoLiA, de ReStructuredText-naar-FoLiA, de AbbyXML-naar-FoLiA en de
-PageXML-naar-FoLiA converters sterk verbeterd.  Er is ook gewerkt aan experimentele conversie naar Salt XML wat
-mogelijkheden biedt om beter aan te sluiten bij de Duitse infrastructuur rondom Salt, Pepper en de ANNIS
-annotatieomgeving. Er is een ``foliasplit`` tooltje bijgekomen die het mogelijk maakt een document op bepaalde criteria
-te splitsen in meerdere documenten.
+On the front of the FoLia-tools, we report significant improvements to the TEI-to-FoLiA converter, the
+ReStructuredText-to-FoLiA converter, the AbbyXML-to-FoLiA converter and the PageXML-to-FoLiA converter. Work has also
+been done on experimental conversion to Salt XML, which provides opportunities for linking with the German
+infrastructure around Salt, Pepper and the ANNIS annotation environment. A ``foliasplit`` tool has been introduced that
+makes it possible to split a FoLiA document on certain criteria.
 
 ## FLAT (T062)
 
-*Taakbeschrijving en planning:* [CLARIAH-PLUS WP3 T062](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/FLAT.T062.pdf)
+*Task description and plan:* [CLARIAH-PLUS WP3 T062](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/FLAT.T062.pdf)
 
-Deze taak is grotendeels een onderhoud en support taak geworden, want er heerste in eerste instantie ook wat onduidelijk
-welk deel van de plannen voor FLAT gehonoreerd kon worden en waaruit vanuit WP3 behoefte was. Vanuit verschillende
-onderzoekers blijkt er wel degelijk behoefte aan FLAT, en deze worden dan ook met prioriteit ondersteund. Het taakplan
-ligt dit nader toe.  Er lopen momenteel twee voorname use-cases ([1](https://github.com/CLARIAH/usecases/blob/master/cases/max-weber.md)
+This task has become mainly a maintenance and support task. There was also a lack of clarity what parts of the FLAT
+plan were desired from a wider WP3-perspective and the time we got allocated for the task was limited so choices had to
+be made. There appears a clear interest in FLAT from the research community, and I support requests from these take
+precedence above any other plans we may have had. The task description (linked above) will further explain this. We
+currently have two prominent use-cases for FLAT: [1](https://github.com/CLARIAH/usecases/blob/master/cases/max-weber.md)
 [2](https://github.com/CLARIAH/usecases/blob/master/cases/negation-annotation-task.md)).
 
-Er zijn zowel van de frontend als de backend in 2020 een drietal releases uitgekomen, zie de appendix
-voor een volledig overzicht. De voornaamste release richtte zich op een punt want al langer op de planning stond;
-namelijk het correct visualiseren van PICCL/TICCL output (een andere CLARIAH taak).
+In 2020, new releases have been done for both the frontend and the backend, see the appendix for a complete overview.
+The most notable release addresses an issue that had long been planned; the correct visualisation of PICCL/TICCL output
+(another CLARIAH task).
+
 
 ## Frog, Ucto en DeepFrog (T139)
 
-*Taakbeschrijving en planning:* [CLARIAH-PLUS WP3 T139](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/Frog.T139.pdf)
+*Task description and plan:* [CLARIAH-PLUS WP3 T139](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/Frog.T139.pdf)
 
-De hoofdontwikkelaar van Frog (en tevens medeontwikkelaar van FoLiA) is in het voorjaar van 2020 met pensioen gegaan.
-Daarvoor is er nog een grote Frog versie opgeleverd met laatste verbeteringen en hebben we stabiele tool die veelvuldig
-gebruikt wordt in de Nederlandse en Vlaamse NLP gemeenschap. Doorlopende ondersteuning is toch gewaarborgd, want ik heb
-deze taak overgenomen. Dit geldt ook voor de tokeniser ucto, een dependency van Frog die we ook onder deze taak scharen.
-Deze taak richt zich dan nu ook voornamelijk op onderhoud en bugfixes, verdere innovatieve doorontwikkeling van Frog an
-sich komt hiermee wel ten einde.
 
-Er is ook gewerkt aan een mogelijke opvolger DeepFrog die op nieuwe deep-learning technieken stoelt. Dit valt eigenlijk
-buiten de begrootte en gebudgeteerde tijd voor deze taak, want die is hiervoor niet toereikend en reeds verbruikt. Toch
-hebben we een eerste experimentele versie van DeepFrog opgeleverd.
+The lead developer of Frog (and also co-developer of FoLiA) has retired in spring 2020. Before that, a last major Frog
+version was released that included various improvement. In doing so, we have delivered a stable tool with a long
+development history. Frog is a popular tool used by many in the Dutch and Flemish NLP communities. Continued support is
+guaranteed despite the retirement of the lead developer, because I have taken over maintenance and support. This also
+applies to the toekniser ucto, a dependency which we include as part of this task. This WP3 task now focusses primarily
+on bugfixes and maintenance, further innovative development of Frog has come to an end.
+
+Work has also been started on a possible successor for Frog that employs more state-of-the-art deep learning
+techiniques. We call it DeepFrog. This, however, exceeds the allocated time and funding for this task. Nevertheless, we
+have delivered a first experimental version of DeepFrog.
 
 ## LaMachine (T098)
 
-*Taakbeschrijving en planning:* [CLARIAH-PLUS WP3
+*Task description and plan:* [CLARIAH-PLUS WP3
 T098](https://github.com/LanguageMachines/clariah-plus-tasks/raw/master/di.huc/LaMachine.T098.pdf)
 
-LaMachine fungeert als de kapstok waaraan we veel van onze software ophangen en de vorm waarin we het aanbieden aan de
-brede gemeenschap binnen en buiten CLARIAH. Het wordt gebruikt zowel door individuele onderzoekers als door
-hosting-partners om onze oplossingen als service aan te bieden. We merken ook een toenemende interesse hierin vanuit
-andere werkpakketten binnen CLARIAH en organisaties als de Stichting Open Spraaktechnologie.  LaMachine wordt relatief
-[veel gebruikt](https://applejack.science.ru.nl/lamastats/lamachinestats.html). Al met al is de taak een ondersteunings-
-en ontwikkelingstaak die veel meer tijd in beslag neemt dan aanvankelijk gedacht, ook was er al minder tijd gehonoreerd dan
-gevraagd en noodzakelijk. Het VRE project, in de volgende sectie beschreven, heeft nauwe banden met deze taak en
-compenseert dit grotendeels weer gelukkig.
 
-De appendix geeft een gedetailleerde overzicht van de ca. tien LaMachine releases die afgelopen jaar zijn gedaan. Hier
-moet je denken aan toevoegingen van allerlei nieuwe tools en services, vele verbeteringen en bugfixes, maar ook
-simpelweg aan het geheel up to date houden met de constant verderlopende realiteit. LaMachine is per definitie iets wat
-lopend aan onderhoud onderhevig is want het stemt allerlei verschillende onderdelen op elkaar af die zich elk in hun
-eigen tempo voortbewegen.
+LaMachine is the umbrella under which we make available a lot of our software and the shape in which we offer it as a
+bundle to the larger community both within and outside of CLARIAH. It is being used both by various individual
+researchers and developers, as well as by hosting partners to offer our tools as a service. We notice an increasing
+interesti in LaMachine also from within CLARIAH and other work packages within it, as well as by external organization,
+such as for example Stiching Open Spraaktechnologie. LaMachine is used [relatively often](https://applejack.science.ru.nl/lamastats/lamachinestats.html) .
+
+This task is a support and maintenance task that takes up significantly more time than originally anticipated. Moreover,
+significantly less time was allocated than we originally asked for. The VRE project, described in the next section, has
+close relations with this task and compensates for this to a certain extent.
+
+The appendix once again provides a detailed overview of the ten or so LaMachine releases that have seen the light in this
+year. These releases mainly consist of additions of new tools and services, upgrades of existing ones, bugfixes,
+and expansions to other platform. Keeping everything up to date with the perpetually changing reality is one of the main
+challenged for LaMachine. It is by definition a system that needs constant maintenance, as it is the system that
+provides the integration for various underlying components that all move in their own way and pace.
 
 ## WP3 Virtual Research Environment (T137)
 
-*Taakbeschrijving en planning:* [CLARIAH-PLUS WP3 T137](https://github.com/LanguageMachines/clariah-plus-tasks/blob/master/di.huc/vre-plan3/plan.md)
-In december 2020 ben ik gevraagd de VRE ontwikkeling op me te nemen en te coördineren nadat ik daarvoor een hernieuwd
-plan had opgesteld. Dit is een koerswijziging ten opzichte van eerdere pogingen in CLARIAH-CORE om het VRE project vorm
-te geven, die erg ambitieus van karakter waren maar helaas niet tot een bruikbaar resultaat hebben geleid. Kernpunt bij
-de nieuwe insteek is om vanuit bestaande CLARIAH software te werken en ons puur te richten op deze met elkaar te
-verbinden, er wordt in die zin geen nieuwe overkoepelende infrastructuur ontwikkeld. LaMachine zat praktisch gezien al
-het dichtste bij een Virtual Research Environment en zal daarom de basis vormen voor verdere integratie.
+*Task description and plan:* [CLARIAH-PLUS WP3
+T137](https://github.com/LanguageMachines/clariah-plus-tasks/blob/master/di.huc/vre-plan3/plan.md) In december 2020 I
+was asked to take on the development and coordination of the WP3 Virtual Research Environment, after I proposed a new
+plan for continuation of this task. This is a change of course with respect to earlier attempts in CLARIAH-CORE to shape
+the VRE project. Earlier attempts were highly ambitious but failed to come to any delivered results. The renewed plan is
+more modest in its aspirations and attempts first and foremost to focus on interconnecting existing CLARIAH software,
+rather than deevelop any new overarching infrastructure. In practice, LaMachine is the closest thing in WP3 we have to a
+Virtual Research Environment and was therefore chosen as the foundation for further integration.
 
-We zoeken in dit project ook aansluiting bij met name het CLARIN Switchboard, waartoe sowieso al werk is verzet in het
-verleden. Belangrijk deel van dit herziene project is ook de disseminatie van de resultaten naar eindgebruikers
-(onderzoekers), in de vorm van o.a. demo video's die de mogelijkheden van de onderzoeksomgeving laten zien.
+In this task, we are also looking to connect to related projects like the CLARIN switchboard. Work has already been done
+to this end in the past. An important objective of the revised VRE plan is also to disseminate the results of our
+efforts to end-user (researchers), in the form of for example demonstration videos that show the capabilities of the
+research environment.
 
 ## PICCL
 
-Deze taak valt niet onder mijn verantwoordelijkheid maar was er één onder die van Martin Reynaert. Ik wil hem toch even
-kort noemen omdat er dit jaar, met het pensioen van de hoofdontwikkelaar Ko van der Sloot, een belangrijke laatste
-release is gedaan van PICCL en de onderliggende TICCLtools waarin meer dan een jaar aan ontwikkeling zit.
+This task is not my responsibility, it's led by Martin Reynaert, but I would like to give a small update on the
+progression here. With the retirement of lead-developer Ko van der Sloot, an important last release of TICCL-tools has
+been done and is the culmination of more than a year's worth of work, TICCL-tools forms the main dependency of PICCL,
+and PICCL itself has also been updated accordingly.
 
 # Appendix: Software Releases
 
-Hieronder een uitgebreid technische overzicht van de release notes van alle software versies die in het kader van
-bovenstaande taken opgeleverd zijn in 2020:
+Below you can find an elaborate overview of all release notes of all our WP3-related software released in 2020.
 
 ## CLAM
 
