@@ -95,7 +95,9 @@ provides the integration for various underlying components that all move in thei
 ## WP3 Virtual Research Environment (T137)
 
 *Task description and plan:* [CLARIAH-PLUS WP3
-T137](https://github.com/LanguageMachines/clariah-plus-tasks/blob/master/di.huc/vre-plan3/plan.md) In december 2020 I
+T137](https://github.com/LanguageMachines/clariah-plus-tasks/blob/master/di.huc/vre-plan3/plan.md)
+
+In December 2020 I
 was asked to take on the development and coordination of the WP3 Virtual Research Environment, after I proposed a new
 plan for continuation of this task. This is a change of course with respect to earlier attempts in CLARIAH-CORE to shape
 the VRE project. Earlier attempts were highly ambitious but failed to come to any delivered results. The renewed plan is
